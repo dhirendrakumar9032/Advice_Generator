@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(217, 19%, 24%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.advice-container {
+  width: 30%;
+  border-radius: 10px;
+  background-color: hsl(216, 19%, 34%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+}
+
+.advice-count {
+  color: hsl(150, 100%, 66%);
+  font-weight: 800;
+}
+
+.advice {
+  font-size: 20px;
+  line-height: 2rem;
+  font-weight: 800;
+  font-family: "Arial Narrow Bold", sans-serif;
+  letter-spacing: 1px;
+  margin: 20px auto;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+}
+
+.divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 30px auto 40px auto;
+}
+
+.divider div {
+  width: 100%;
+  height: 2px;
+  margin: 0 5px;
+  background-color: aquamarine;
+}
+
+.divider span {
+  width: 10px;
+  height: 15px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.load-button {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: -28px;
+  border-radius: 50px;
+  background-color: hsl(150, 100%, 66%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.load-button:hover {
+  box-shadow: 0px 2px 20px hsl(150, 100%, 66%);
+}
+
+.load-button:active {
+  box-shadow: 0px 2px 4px hsl(150, 100%, 66%);
+}
+
+@media only screen and (max-width: 820px) {
+  .advice-container {
+    width: 85%;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1vh;
+  font-size: 16px;
+  color: aliceblue;
+}
+
+.attribution a {
+  color: green;
+}
